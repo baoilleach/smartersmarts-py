@@ -1,0 +1,18 @@
+img {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px 3px 3px #555;
+  margin: 10px;
+}
+
+#dv_png {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.limbo {
+  opacity: 0.4;
+}
