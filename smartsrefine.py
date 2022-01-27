@@ -21,29 +21,29 @@ def index():
     bottle.response.set_header('Expires', '0')
     return mainhtml
 
-@bottle.get('/smartsrefine_static/js/<filename:re:.*\.js>')
+@bottle.get(f'{URLPREFIX}/js/<filename:re:.*\.js>')
 def javascripts(filename):
     return bottle.static_file(filename, root='static/js')
-@bottle.get('/smartsrefine_static/ext/js/<filename:re:.*\.js>')
+@bottle.get(f'{URLPREFIX}/ext/js/<filename:re:.*\.js>')
 def javascripts_ext(filename):
     return bottle.static_file(filename, root='static/ext/js')
-@bottle.get('/smartsrefine_static/ext/fonts/<filename:re:.*\.(woff2|woff|ttf)>')
+@bottle.get(f'{URLPREFIX}/ext/fonts/<filename:re:.*\.(woff2|woff|ttf)>')
 def javascripts_ext(filename):
     return bottle.static_file(filename, root='static/ext/fonts')
-@bottle.get('/smartsrefine_static/css/<filename:re:.*\.css>')
+@bottle.get(f'{URLPREFIX}/css/<filename:re:.*\.css>')
 def stylesheets(filename):
     return bottle.static_file(filename, root="static/css")
-@bottle.get('/smartsrefine_static/ext/css/<filename:re:.*\.css>')
+@bottle.get(f'{URLPREFIX}/ext/css/<filename:re:.*\.css>')
 def stylesheets_ext(filename):
     return bottle.static_file(filename, root="static/ext/css")
-@bottle.get('/smartsrefine_static/imgs/<filename:re:.*\.(png|gif|ico)>')
+@bottle.get(f'{URLPREFIX}/imgs/<filename:re:.*\.(png|gif|ico)>')
 def imgs(filename):
     return bottle.static_file(filename, root="static/imgs")
-@bottle.get('/smartsrefine_static/ext/imgs/jquery-ui-1.10.3/<filename:re:.*\.png>')
+@bottle.get(f'{URLPREFIX}/ext/imgs/jquery-ui-1.10.3/<filename:re:.*\.png>')
 def imgs_jquery_ui(filename):
     return bottle.static_file(filename, root="static/ext/imgs/jquery-ui-1.10.3")
 
-@bottle.route('%s/search' % URLPREFIX, method="Get")
+@bottle.route(f'{URLPREFIX}/search', method="Get")
 def search():
     alldata = bottle.request.GET
     smarts = alldata.get('smarts')
