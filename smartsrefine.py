@@ -11,9 +11,9 @@ URLPREFIX = "/smartsrefine"
 @bottle.get("/")
 def redirect_to_index():
     """This will only ever be accessed when developing locally"""
-    bottle.redirect(PREFIX)
+    bottle.redirect(URLPREFIX)
 
-@bottle.get(PREFIX)
+@bottle.get(URLPREFIX)
 def index():
     # Do not cache
     bottle.response.set_header('Cache-Control', 'no-cache, no-store, must-revalidate')
