@@ -9,7 +9,7 @@ import common
 def readhistogram():
     freqs = {}
     total = 0
-    for i, line in enumerate(open(os.path.join("nbu", "histogram.txt"))):
+    for i, line in enumerate(open("histogram.txt")):
         broken = list(map(int, line.rstrip().split()))
         freqs[tuple(broken[:-1])] = broken[-1]
         total += broken[-1]
@@ -33,7 +33,7 @@ def FindMatches(smarts):
     if not ss.IsValid():
         return -1
     ss.SetMaxMatches(1)
-    fname = os.path.join("nbu", "sortedbylength_100K.smi")
+    fname = "sortedbylength_100K.smi"
     mol = oe.OEGraphMol()
     results = {}
     for line in open(fname):
