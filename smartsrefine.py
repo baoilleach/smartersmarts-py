@@ -8,8 +8,12 @@ import showmatches
 mainhtml = open("smartsrefine.html").read()
 URLPREFIX = "/smartsrefine"
 
-# Static Routes
-@bottle.get('/')
+@bottle.get("/")
+def redirect_to_index():
+    """This will only ever be accessed when developing locally"""
+    bottle.redirect(PREFIX)
+
+@bottle.get(PREFIX)
 def index():
     # Do not cache
     bottle.response.set_header('Cache-Control', 'no-cache, no-store, must-revalidate')
