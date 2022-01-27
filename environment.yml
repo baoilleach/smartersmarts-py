@@ -3,32 +3,29 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - _libgcc_mutex=0.1=conda_forge
+  - _libgcc_mutex=0.1=main
   - _openmp_mutex=4.5=1_gnu
   - bottle=0.12.18=py_0
-  - bzip2=1.0.8=h7f98852_4
   - ca-certificates=2021.10.8=ha878542_0
-  - ld_impl_linux-64=2.36.1=hea4e1c9_2
-  - libffi=3.4.2=h7f98852_5
-  - libgcc-ng=11.2.0=h1d223b6_11
-  - libgomp=11.2.0=h1d223b6_11
-  - libnsl=2.0.0=h7f98852_0
-  - libuuid=2.32.1=h7f98852_1000
-  - libzlib=1.2.11=h36c2ea0_1013
-  - ncurses=6.2=h58526e2_4
-  - openssl=3.0.0=h7f98852_2
+  - certifi=2021.10.8=py39hf3d152e_1
+  - ld_impl_linux-64=2.35.1=h7274673_9
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.3.0=h5101ec6_17
+  - libgomp=9.3.0=h5101ec6_17
+  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - ncurses=6.3=h7f8727e_2
+  - openssl=1.1.1m=h7f8727e_0
   - paste=3.5.0=pyh9f0ad1d_0
-  - pip=21.3.1=pyhd8ed1ab_0
-  - python=3.10.1=h543edf9_2_cpython
-  - python_abi=3.10=2_cp310
-  - readline=8.1=h46c0cb4_0
+  - pip=21.2.4=py39h06a4308_0
+  - python=3.9.7=h12debd9_1
+  - python_abi=3.9=2_cp39
+  - readline=8.1.2=h7f8727e_1
+  - setuptools=58.0.4=py39h06a4308_0
   - six=1.16.0=pyh6c4a22f_0
-  - sqlite=3.37.0=h9cd32fc_0
-  - tk=8.6.11=h27826a3_1
-  - tzdata=2021e=he74cb21_0
-  - wheel=0.37.1=pyhd8ed1ab_0
-  - xz=5.2.5=h516909a_1
-  - zlib=1.2.11=h36c2ea0_1013
-  - pip:
-    - setuptools==60.5.0
+  - sqlite=3.37.0=hc218d9a_0
+  - tk=8.6.11=h1ccaba5_0
+  - tzdata=2021e=hda174b7_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7f8727e_4
 prefix: /home/export/noel.oboyle/Tools/conda/miniconda3/envs/smartsrefine_ws
